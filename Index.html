@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,62 +11,70 @@
     <script src="https://kit.fontawesome.com/921ac0d672.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
 </head>
-
-<body>
+  <body>
     <div>
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1976D2;">
             <a class="navbar-brand" href="#">LOGO</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto mr-1">
-                    <li class="nav-item active">
-                        <a class="nav-link nav-ele" href="#"><i class="fa-solid fa-house"></i>Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle nav-ele" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#"><i class="fa-solid fa-stethoscope mr-2"></i>Hospital</a>
-                            <a class="dropdown-item" href="#"><i class="fa-solid fa-handcuffs mr-2"></i>Police</a>
-                            <a class="dropdown-item" href="#"><i class="fa-solid fa-fire-extinguisher mr-2"></i>Fire</a>
-                            <a class="dropdown-item" href="#"><i class="fa-solid fa-traffic-light mr-2"></i></i>Traffic Police</a>
-                            <a class="dropdown-item" href="#"><i class="fa-solid fa-bolt mr-2"></i>Electric</a>
-                            <a class="dropdown-item" href="#"><i class="fa-solid fa-recycle mr-2"></i>Muncipal</a>
-                        </div>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link nav-ele" onclick="display('sectionfoot')">About</a>
-                    </li>
-                </ul>
+              <ul class="navbar-nav ml-auto mr-1">
+                <li class="nav-item active">
+                  <a class="nav-link nav-ele" href="#"><i class="fa-solid fa-house"></i>Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle nav-ele" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#"><i class="fa-solid fa-stethoscope mr-2"></i>Hospital</a>
+                    <a class="dropdown-item" href="#"><i class="fa-solid fa-handcuffs mr-2"></i>Police</a>
+                    <a class="dropdown-item" href="#"><i class="fa-solid fa-fire-extinguisher mr-2"></i>Fire</a>
+                    <a class="dropdown-item" href="#"><i class="fa-solid fa-traffic-light mr-2"></i></i>Traffic Police</a>
+                    <a class="dropdown-item" href="#"><i class="fa-solid fa-bolt mr-2"></i>Electric</a>
+                    <a class="dropdown-item" href="#"><i class="fa-solid fa-recycle mr-2"></i>Muncipal</a>
+                  </div>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link nav-ele" onclick="display('sectionfoot')">About</a>
+                </li>
+              </ul>
             </div>
         </nav>
     </div>
-    <div id="sectionfoot">
-        <div class="foot p-3">
-            <h1>
-                About us
-            </h1>
-            <p>
-                Welcome to [Website Name], a dedicated platform empowering citizens to report community issues and collaborate with local government departments. Our citizen issue-reporting platform enables you to easily report problems such as dead animals, bad odors, or emergencies by uploading photos or notes. With real-time location tracking, we automatically notify relevant authorities via WhatsApp, ensuring fast responses. Our goal is to resolve issues within 3 hours, fostering civic engagement, accountability, and creating safer, cleaner, and healthier environments for all. Join us in improving the quality of life in our communities.
-            </p>
-            <h1 class="follow">Follow Us</h1>
-            <div>
-                <div class="d-flex flex-row justify-content-center">
-                    <div class="follow-icons">
-                        <a><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
-                    <div class="follow-icons ml-5">
-                        <a><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                    <div class="follow-icons ml-5">
-                        <a><i class="fa-brands fa-facebook-f"></i></a>
-                    </div>
-                </div>
+    <div class="mid">
+      <h1 class="tag_line">Snap, Upload, Resolve!</h1>
+      <div class="d-flex flex-row justify-content-center">
+        <label for="mediaInput" class="upload-btn-label">Upload Media</label>
+        <input type="file" id="mediaInput" class="upload-btn" accept="image/, video/" multiple>
+        <div id="mediaContainer"></div>
+      </div>
 
-            </div>
-        </div>
     </div>
-</body>
-
+    <div id="sectionfoot">
+      <div class="foot p-3">
+        <h1 class="follow">
+          About Us
+        </h1>
+        <p>
+          Welcome to [Website Name], a dedicated platform empowering citizens to report community issues and collaborate with local government departments. Our citizen issue-reporting platform enables you to easily report problems such as dead animals, bad odors, or emergencies by uploading photos or notes. With real-time location tracking, we automatically notify relevant authorities via WhatsApp, ensuring fast responses. Our goal is to resolve issues within 3 hours, fostering civic engagement, accountability, and creating safer, cleaner, and healthier environments for all. Join us in improving the quality of life in our communities.
+        </p>
+        <h1 class="follow">Follow Us</h1>
+        <div>
+          <div class="d-flex flex-row justify-content-center">
+            <div class="follow-icons">
+              <a><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="follow-icons ml-5">
+              <a><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="follow-icons ml-5">
+              <a><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
