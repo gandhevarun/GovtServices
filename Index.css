@@ -1,24 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
-
-.nav-ele {
+.nav-ele{
     color: #ffffff !important;
     font-family: Lato;
 }
-
-.foot {
+.mid{
+    height: 50vh;
+}
+.upload-btn {
+    display: none;
+  }
+  
+  .upload-btn-label {
+    width: 208.292px;
+    height: 56px;
+    padding: 12px 24px;
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 1000px;
+    background: rgb(15, 112, 230);
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 32px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .upload-btn-label:hover {
+    background: rgb(10, 80, 170);
+  }
+  
+  #mediaContainer {
+    margin-top: 20px;
+  }
+  
+  #mediaContainer img, #mediaContainer video {
+    max-width: 100%;
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+  }
+.tag_line{
+    text-align: center;
+    margin: 18px;
+}
+  
+.foot{
     background-color: #000000;
-    height: 63vh;
+    height: 50vh;
     width: 100%;
     color: #ffffff;
     bottom: 0;
-    position: fixed;
 }
-
-.follow {
+.follow{
     text-align: center;
 }
-
-.follow-icons {
+.follow-icons{
     padding: 12px 18px 12px 22px;
     background-color: #979797;
     width: 80px;
@@ -26,4 +63,13 @@
     border-radius: 40px;
     margin: 15px;
     font-size: 35px;
+}
+.media-container {
+    margin: 10px;
+}
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
 }
